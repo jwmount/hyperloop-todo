@@ -25,6 +25,8 @@ input[type="checkbox"] {
   outline: none;
 }
 
+/* Classes -- begin with . */
+
 .todo-app {
   background: #fff;
   margin: 130px 0 40px 0;
@@ -83,6 +85,10 @@ input[type="checkbox"] {
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   font-smoothing: antialiased;
+}
+
+.new-todo, .edit {
+  color: green;   /* makes text this color for new item */
 }
 
 .new-todo {
@@ -217,9 +223,11 @@ li.todo-item:hover .destroy {
   display: block;
 }
 
-/*li.todo-item .edit {
-  display: none;
-}*/
+/* this was commented out */
+li.todo-item .edit {
+  color: blue;
+  #  display: none;
+}
 
 li.todo-item.editing:last-child {
   margin-bottom: -1px;

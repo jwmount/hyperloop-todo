@@ -11,7 +11,7 @@ class TodoItem < Hyperloop::Component
       .on(:click) { params.todo.update(completed: !params.todo.completed) }
       LABEL { params.todo.title }
       .on(:double_click) { mutate.editing true }
-      A(class: :destroy) 
+      A(class: :destroy)
       .on(:click) { params.todo.destroy }
     end
   end

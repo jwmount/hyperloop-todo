@@ -1,5 +1,10 @@
 /* https://github.com/ruby-hyperloop/todo-tutorial/blob/master/app/assets/stylesheets/todo.css
 */
+
+/*  From www.lociot.com
+Titles - Raleway
+Text - Open Sans
+*/
 html,
 body {
   margin: 0;
@@ -87,8 +92,8 @@ input[type="checkbox"] {
   font-smoothing: antialiased;
 }
 
-.new-todo, .edit {
-  color: green;   /* makes text this color for new item */
+.new-todo, .new {
+  color: green;   /* makes text this color for new item, see index.rb */
 }
 
 .new-todo {

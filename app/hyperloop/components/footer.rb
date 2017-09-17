@@ -5,7 +5,7 @@ class Footer < Hyperloop::Component
     # wrap the NavLink in a LI and
     # tell the NavLink to change the class to :selected when
     # the current (active) path equals the NavLink's path.
-    
+
     # Research, where does active_class: come from?
     LI { NavLink("/#{path}", active_class: :selected)  { path.camelize } }
   end

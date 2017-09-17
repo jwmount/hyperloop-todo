@@ -12,13 +12,19 @@
   <% end %>
 
   <div class="field">
+    <%= form.label :todo_id %>
+    <%= form.text_field :todo_id, id: :organization_todo_id %>
+  </div>
+
+
+  <div class="field">
     <%= form.label :name %>
     <%= form.text_field :name, id: :organization_name %>
   </div>
 
   <div class="field">
-    <%= form.label :todo_id %>
-    <%= form.number_field :todo_id, id: :organization_todo_id %>
+    <%= form.label :street %>
+    <%= form.text_field :street, id: :organization_street %>
   </div>
 
   <div class="actions">

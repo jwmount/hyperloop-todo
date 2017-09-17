@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: 
-  todo_id: 1
+  todo-id: MyString
+  : 
+  name,: MyString
+  street: MyString
 
 two:
-  name: 
-  todo_id: 1
+  todo-id: MyString
+  : 
+  name,: MyString
+  street: MyString

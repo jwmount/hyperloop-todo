@@ -1,13 +1,23 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Todo-id:</strong>
+  <%= @organization.todo_id %>
+</p>
+
+<p>
+  <strong>:ID</strong>
+  <%= @organization.id %>
+</p>
+
+<p>
+  <strong>Name</strong>
   <%= @organization.name %>
 </p>
 
 <p>
-  <strong>Todo:</strong>
-  <%= @organization.todo_id %>
+  <strong>Street:</strong>
+  <%= @organization.street %>
 </p>
 
 <%= link_to 'Edit', edit_organization_path(@organization) %> |

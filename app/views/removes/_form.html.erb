@@ -1,0 +1,22 @@
+<%= form_with(model: remove, local: true) do |form| %>
+  <% if remove.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(remove.errors.count, "error") %> prohibited this remove from being saved:</h2>
+
+      <ul>
+      <% remove.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :organization %>
+    <%= form.text_field :organization, id: :remove_organization %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

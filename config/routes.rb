@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :removes
   resources :organizations
   mount Hyperloop::Engine => '/hyperloop'
   # root 'hyperloop#app' # route just the root to the component named App

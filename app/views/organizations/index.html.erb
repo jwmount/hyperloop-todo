@@ -5,8 +5,10 @@
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Todo</th>
+      <th>Todo-id</th>
+      <th></th>
+      <th>Name,</th>
+      <th>Street</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,8 +16,9 @@
   <tbody>
     <% @organizations.each do |organization| %>
       <tr>
-        <td><%= organization.name %></td>
         <td><%= organization.todo_id %></td>
+        <td><%= organization.name %></td>
+        <td><%= organization.street %></td>
         <td><%= link_to 'Show', organization %></td>
         <td><%= link_to 'Edit', edit_organization_path(organization) %></td>
         <td><%= link_to 'Destroy', organization, method: :delete, data: { confirm: 'Are you sure?' } %></td>

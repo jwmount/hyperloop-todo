@@ -6,6 +6,7 @@ class App < Hyperloop::Router
       Header()
       Route('/', exact: true) { Redirect('/all') }
       Route('/:scope', mounts: Index)
+      #Timer()
       Footer() unless Todo.count.zero?
     end
   end

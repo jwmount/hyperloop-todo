@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170905193033) do
+ActiveRecord::Schema.define(version: 20170916230458) do
 
   create_table "hyperloop_connections", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "channel"
@@ -25,9 +25,23 @@ ActiveRecord::Schema.define(version: 20170905193033) do
     t.integer "connection_id"
   end
 
+  create_table "organizations", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer "todo_id"
+    t.string "name"
+    t.string "street"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "removes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "organization"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "todos", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "title"
-    t.boolean "completed"
+    t.boolean "completed", default: false, null: false
     t.integer "priority"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -5,7 +5,6 @@ class Index < Hyperloop::Router::Component
       Todo.send(match.params[:scope]).each do |todo|
         DIV(class: 'new')
           TodoItem(todo: todo)
-
       end
     end
   end

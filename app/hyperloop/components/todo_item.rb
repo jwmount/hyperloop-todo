@@ -2,7 +2,7 @@
 class TodoItem < Hyperloop::Component
   param :todo
   state editing: false
-  render(LI, class: 'todo-item') do
+  render(LI, class: 'todo-item', background: :black ) do
     if state.editing
       EditItem(todo: params.todo, class: :edit)
       .on(:save, :cancel) { mutate.editing false }

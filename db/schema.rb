@@ -33,12 +33,6 @@ ActiveRecord::Schema.define(version: 20170916230458) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "removes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string "organization"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "todos", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "title"
     t.boolean "completed", default: false, null: false

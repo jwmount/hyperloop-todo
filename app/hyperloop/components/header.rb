@@ -1,4 +1,3 @@
-# app/hyperloop/components/header.rb
 class Header < Hyperloop::Component
   state(:new_todo) { Todo.new }
   render(HEADER, class: :header) do

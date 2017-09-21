@@ -11,14 +11,15 @@ class Footer < Hyperloop::Component
   end
   render(DIV, class: :footer) do   # add class
 
-    SPAN(class: 'todo-count') do
-      "#{Todo.active.count} item#{'s' if Todo.active.count != 1} left"
-    end
 
     UL(class: :filters) do         # wrap links in a UL
       link_item(:all)
       link_item(:active)
       link_item(:completed)
+    end
+
+    SPAN(class: 'todo-count') do
+      "#{Todo.active.count} item#{'s' if Todo.active.count != 1} left"
     end
 
   end
